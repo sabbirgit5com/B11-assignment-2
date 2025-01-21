@@ -195,6 +195,25 @@
 
         }
        
+        .hhh-ppp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+      .highlight{
+        background-color: orange;
+        border-radius: 50%;    
+        padding: 15px;
+        display: inline-block;
+        font-size: 30px;
+      }
+
+      @media (max-width:578px) {
+        .highlight{
+            display: none;
+        }
+      }
 
     </style>
 </head>
@@ -270,10 +289,14 @@
  <br>               
             <p class="pp-3">Read More</p>
             </div>
-            
+
         </div>
     </div>
-    
+     
+    <div class="hhh-ppp" >
+        <span class="highlight">&lt;</span>
+        <span class="highlight">&gt;</span>
+    </div>
    
 </div>   
 </body>
