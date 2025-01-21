@@ -98,6 +98,7 @@
             gap: 70px;
             justify-content: center;
             align-items: center;
+            padding-bottom: 20px;
         }
         .banner-head{
             font-size: 56px;
@@ -129,13 +130,71 @@
             }
             .banner-image{
                 margin-bottom: 10px;
-                  
-            }
-                
+
+            }   
             }
         
-       
+       /* standard curriculum section */
+        
+       .head-tag{
+        text-align: center;
+       }
+       .box-container{
+        display: flex;
+        gap: 35px;
+        justify-content: center;
+        justify-items: center;
+        text-align: center; 
+        
+       }
 
+       .box-1{
+        background-color: #DEF5FF;
+        border-radius: 18.8px;
+        padding: 25px 30px;   
+        background-image: linear-gradient(#DEF5FF, #FFFFFF);
+       }
+       
+       .box-2{
+        background-color: #FFF4DC;
+        border-radius: 18.8px;
+        padding: 25px 30px;
+        background-image: linear-gradient(#FFF4DC, #FFFFFF)
+       }
+
+       .box-3{
+        background-color: #F2E8FF;
+        border-radius: 18.8px;
+        padding: 25px 30px;   
+        background-image: linear-gradient(#F2E8FF, #FFFFFF)
+       }
+       .color-p{
+        color: #808080;
+       }
+       .pp-1{
+        font-weight: bold;
+        color: #64C8FF;           
+       }
+       .pp-2{
+        font-weight: bold;
+        color: #F0AA00;
+       }
+       .pp-3{
+        font-weight: bold;
+        color: #8700FF;
+
+       }
+       @media (max-width:578px) {
+        .box-container{
+            flex-direction: column;
+            width: 92%;
+            padding: 0px 9px;
+            height: 80%;
+            margin-bottom: 20px;
+            }
+
+        }
+       
 
     </style>
 </head>
@@ -180,6 +239,41 @@
         </div>
 
     </div>
+<br>
+<br>
+    <div class="box">
+        <h1 class="head-tag">Standard Curriculum</h1>
+        <div class="box-container">
+            <div class="box-1">
+                <img src="assets/kinder.png" alt="">
+            <h2>Kinder (3-6) Years</h2>
+            <p class="color-p">Cum sociis natoque penatibus et magnis <br>
+                dis parturient montes, nascetur ridiculus <br>
+                mu sdis parturient</p>
+ <br>                
+            <p class="pp-1">Read More</p>
+            </div>
+            <div class="box-2">
+                <img src="assets/elementary.png" alt="">
+            <h2>Elementary School</h2>
+            <p class="color-p">Cum sociis natoque penatibus et magnis <br>              dis parturient montes, nascetur ridiculus <br>
+                mu sdis parturient</p>
+ <br>               
+            <p class="pp-2">Read More</p>
+            </div>
+            <div class="box-3">
+                <img src="assets/middle.png" alt="">
+            <h2>Middle (10-16) Years</h2>
+            <p class="color-p">Cum sociis natoque penatibus et magnis <br>
+                dis parturient montes, nascetur ridiculus <br>
+                mu sdis parturient</p>
+ <br>               
+            <p class="pp-3">Read More</p>
+            </div>
+            
+        </div>
+    </div>
+    
    
 </div>   
 </body>
