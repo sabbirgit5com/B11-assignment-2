@@ -4,24 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-
-        }
-       
+    <style>  
         nav{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
             padding-left: 10%;
             padding-right: 10%;
         }
         .content{
             padding-top: 9px;
-          height: 100vh;
+          height: 20vh;
           width: 100%;
         }
         .logo-name{
@@ -37,9 +30,10 @@
             text-decoration: none;
             font-weight: 500;
         }
-        button{
+        .btn-ppp{
             border: none;
             background-color: orange;
+            color: white;
             border-radius: 12px;
             padding: 11px 35px;
             display: block;
@@ -71,7 +65,7 @@
         }
 
         @media screen and (max-width: 578px) {
-            .logo-name, button{
+            .logo-name, .btn-ppp{
                 display: none;
             }
         }
@@ -87,19 +81,61 @@
             margin: 10px 0;
             text-align: center;
         }
-        .menu-toggle:checked + .menu-icon + .nav-links{
-            display: block;
-            
-       
-        }
+        .menu-toggle:checked + .menu-icon + .nav-links{     
 
-        .menu-icon {
+        }
+        .menu-icon{
             display: block;
         }
         nav{
             border: 2px solid orange;
         }
         }
+        
+        /* banner section */
+        .banner{
+            display: flex;
+            gap: 70px;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner-head{
+            font-size: 56px;
+            font-weight: bold;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 12px;
+            border: none;
+            justify-content: start;
+        }
+        .pp-tag{
+            font-size: 20px;
+        }    
+      
+        @media (max-width: 578px){
+            .banner{
+                flex-direction: column-reverse;
+            }
+            .banner-text{
+                margin-top: 20px;
+                text-align: center;
+
+            }
+            .responsive-image{
+                width: 100%;       
+            }
+            .banner-image{
+                margin-bottom: 10px;
+                  
+            }
+                
+            }
+        
+       
+
 
     </style>
 </head>
@@ -119,11 +155,32 @@
                     <li><a href="#"><span class="facil-col">Facilites</span></a></li>
                     <li><a href="#"><span class="adm-col">Admission</span></a></li>
                    </ul>
-                   <button type="button">Contact</button>
+                   <button class="btn-ppp" type="button">Contact</button>
             </div>
            
         </nav>
     </div>
+<br>
+<div class="banner">
+    <div class="banner-text">
+        <h1 class="banner-head">
+           <span class="home-color">Empowering</span><br>
+           Students from small <br>
+           age <span class="about-col">towards vision</span>           
+        </h1>
+        <p class="pp-tag"> With the courage, Confidevce, Crativity and Compassion to make <br>
+            their Unique Contribution in a Diverse and Dynamic World.
+        </p>
+        <button type="button" class="btn">Enroll Now</button>
+    </div>
+        
+        
+        <div class="banner-image">
+            <img class="responsive-image" src="assets/hero-kids.png" alt="">
+        </div>
+
+    </div>
    
+</div>   
 </body>
 </html>
