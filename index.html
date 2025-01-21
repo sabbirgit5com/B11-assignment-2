@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2</title>
     <style>  
+        .full-image{
+            background-image: url('/assets/bg.png');
+            background-position: center;
+        }
         nav{
             display: flex;
             align-items: center;
@@ -129,8 +133,7 @@
                 width: 100%;       
             }
             .banner-image{
-                margin-bottom: 10px;
-
+                padding-right: 37px;
             }   
             }
         
@@ -198,7 +201,7 @@
         .hhh-ppp{
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center;FEA301
             gap: 20px;
         }
       .highlight{
@@ -207,6 +210,7 @@
         padding: 15px;
         display: inline-block;
         font-size: 30px;
+        margin-bottom: 20px;
       }
 
       @media (max-width:578px) {
@@ -214,11 +218,115 @@
             display: none;
         }
       }
+       /*our sroties section  */
+
+      .our-container{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        background-image: linear-gradient(to top, #FEA301, #FFFFFF);
+       background: linear-gradient(
+        to top,
+        #FEA301 0%,
+        #FEA301 10%,
+        #FFFFFF 30%,
+        #FFFFFF 50%,
+        #FFFFFF 70%,
+        #FFFFFF 100%,
+       );
+      }
+
+      .first-image{
+        background-color: rgb(255, 255, 255);
+        border-radius: 18px;
+
+      }
+      
+
+        
+      button{
+        padding: 14px 18px;
+        border-radius: 18px;
+        display: block ;
+        border: none;
+      }
+     
+     
+      
+      .cards-2{
+        border: 1px solid black;
+        border: none;
+        background-color: white;
+        border-radius: 18px;
+        
+        
+       
+      }
+     .cards-3{
+        border: 1px solid black;
+        border: none;
+        background-color: white;
+        border-radius: 18px;
+      
+     }
+     .cards-4{
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 18px;
+       border: none;
+     }
+     .cards-5{
+        border: 1px solid black;
+        background-color: white;
+        border: none;
+        border-radius: 18px;
+                     
+     }
+     .bt-1{
+        background-color: #3CD8E8;
+        color: #FFFFFF;
+     }
+     .bt-2{
+        background-color: #95B226;
+        color: #FFFFFF;
+     }
+     .bt-3{
+        background-color: #5D58F0;
+        color: #FFFFFF;
+     }
+     .bt-4{
+        background-color: #F4451C;
+        color: #FFFFFF;
+     }
+     .bt-5{
+        background-color: #530254;
+        color: #FFFFFF;
+     }
+
+     .imag-1{
+        border-radius: 18px 18px 0px 0px;
+     }
+
+     .bn-1{
+        margin-bottom: 12px;
+        margin-top: 70px;
+        margin-right: 50%;
+     }
+     .btn-10{
+        border-radius: 18px;
+        padding: 15px 35px;
+        background-color: black;
+        color: white;
+        display: block;
+        margin: 0 auto;      
+     }
+
 
     </style>
 </head>
     
-<body>
+<body class="full-image">
     
     <div class="content">
         <nav>
@@ -297,7 +405,66 @@
         <span class="highlight">&lt;</span>
         <span class="highlight">&gt;</span>
     </div>
-   
+<br>
+<br>
+
+    <div class="head-tag">
+        <h1>Our Stories</h1>
+    </div>
+ <br>   
+    <div class="our-head">
+        <div class="our-container">
+            <div class="cards-1">
+                <div class="first-image"> 
+                 <img class="imag-1" src="assets/story-1.png" alt="">     
+                 <br>
+                   <button class="bt-1" type="button">November 19, 2019</button>
+                 <h2>A fun toddler coloring training on <br> 
+                     classroom</h2>
+                 <p>Beautiful branding for changes by Never Now in Australia. <br>
+                     changes is a platform for open discussion in an inclusive and <br>
+                     collaborative environment, providing the...</p></div> 
+                     <br>
+                     <br>          
+                </div>
+               <div class="images-2">
+                 <div class="cards-2">
+                     <img class="imag-1" src="assets/story-2.png" alt=""><br>
+                         <button class="bt-2" type="button">November 19, 2019</button>
+                     <h4>Find out if a school fits the <br>
+                         family’s needs</h4>
+                    </div>    
+                    <div class="cards-3">
+                     <img class="imag-1" src="assets/story-3.png" alt=""><br>
+     
+                 <button class="bt-3" type="button">November 19, 2019</button>   
+                     <h4>Summer math & literacy <br>
+                         centres for kids
+                         </h4>
+                    </div>    
+
+                    <div class="bn-1">
+                        <button class="btn-10" type="button">View All</button>
+                    </div>
+             </div>
+     
+             <div>
+                 <div class="cards-4">
+                     <img class="imag-1" src="assets/story-4.png" alt=""><br>
+                         <button class="bt-4" type="button">November 19, 2019</button>
+                     <h4>Find out if a school fits the <br>
+                         family’s needs</h4>
+                    </div>    
+                    <div class="cards-5">
+                     <img class="imag-1" src="assets/story-5.png" alt=""><br>
+                 <button class="bt-5" type="button">November 19, 2019</button>   
+                     <h4>Summer math & literacy <br>
+                         centres for kids
+                         </h4>
+                    </div>  
+            </div>                                
+         </div>                               
+    </div>             
 </div>   
 </body>
 </html>
